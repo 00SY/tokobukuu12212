@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon" />
+
+    <!-- Bootstrap CSS & Jquery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+        integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="{{ url_for('static', filename='myjs.js') }}"></script>
+
+    <title>BookVerse</title>
+    <script>
+        $(document).ready(function () {
+            check_admin();
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/adminpage">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="55" width="200">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <form class="d-flex">
+                        <div class="form-control me-4 form-nav">
+                            <input class="inp-nav" placeholder="Cari Buku" aria-label="Search" id="cari" disabled>
+                            <a onclick="cari()"><i class="fa fa-search fa-lg icon-src-nav" aria-hidden="true"></i></a>
+                        </div>
+                    </form>
+                    <a class="nav-link active semibold" style="color: black;" aria-current="page" href="/tambah">Input
+                        Buku</a>
+                    <a class="nav-link semibold" style="color: #D60000; cursor: pointer;"
+                        onclick="sign_out()">Keluar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="buku-baru">
+        <div class="container add">
+            <div class="card px-5 py-3">
+                <h1 class="bold mt-2" style="text-align: center;">TAMBAH BUKU BARU</h1>
+                <hr>
+                <div class="form-group d-flex ms-4">
+                    <label for="judul">Judul Buku: &emsp; &emsp; &emsp;</label>
+                    <input class="me-4" type="text" id="judul" name="judul">
+                </div>
+                <div class="form-group d-flex ms-4">
+                    <label for="deskripsi">Deskripsi Buku: &emsp; &emsp;</label>
+                    <textarea class="me-4" id="deskripsi" name="deskripsi" rows="4"></textarea>
+                </div>
+
+                <div class="form-group d-flex ms-4">
+                    <label for="harga">Harga Buku: &emsp; &emsp; &emsp;</label>
+                    <input class="me-4" type="number" id="harga" name="harga">
+                </div>
+
+                <div class="form-group d-flex ms-4">
+                    <label for="kategori">Kategori Buku: &emsp; &emsp;</label>
+                    <select class="me-4" id="kategori" name="kategori">
+                        <option value="Novel">Novel</option>
+                        <option value="Biografi">Biografi</option>
+                        <option value="Ensiklopedia">Ensiklopedia</option>
+                        <option value="Komik">Komik</option>
+                        <option value="Buku Pelajaran">Buku Pelajaran</option>
+                        <option value="Buku masak">Buku masak</option>
+                    </select>
+                </div>
+
+                <div class="form-group d-flex ms-4">
+                    <label for="bahasa">Bahasa Buku: &emsp; &emsp; &ensp;</label>
+                    <!-- <input class="me-4" type="text" id="bahasa" name="bahasa"> -->
+                    <select class="me-4" id="bahasa" name="bahasa">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Inggris">Inggris</option>
+                        <option value="Jepang">Jepang</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+                </div>
+
+                <div class="form-group d-flex ms-4">
+                    <label for="gambar-buku">Cover Buku:&ensp;</label>
+                    <div class="custom-file-input">
+                        <label for="gambar-buku">Choose File</label>
+                        <input type="file" id="gambar-buku" name="gambar-buku">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-4">
+                    <button onclick="check_judul_t()" class="btn semibold btn-login py-2 me-5">Tambah</button>
+                    <a href="/adminpage"><button class="btn semibold btn-back">Batal</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

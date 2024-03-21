@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+body {
+  background-color: #f5f8ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.m-top {
+  margin-top: 150px;
+}
+
+.navbar-brand {
+  padding: 0 0 0 0;
+}
+
+.bg-nav {
+  background-color: #D9D9D9;
+}
+
+.form-nav {
+  border-radius: 30px;
+  width: auto;
+}
+
+.inp-nav {
+  border: white;
+  outline: white;
+  width: 300px;
+}
+
+.icon-src-nav {
+  color: black;
+}
+
+.box {
+  max-width: 48%;
+  height: 173px;
+  padding: 40px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box-bg1 {
+  border: 1px solid rgba(0, 74, 216, 0.5);
+  filter: drop-shadow(0px 4px 4px rgba(0, 74, 216, 0.5));
+}
+
+.box-bg2 {
+  border: 1px solid rgba(216, 65, 0, 0.5);
+  filter: drop-shadow(0px 4px 4px rgba(216, 65, 0, 0.5));
+}
+
+.dash {
+  margin-top: 100px;
+}
+
+.box i {
+  font-size: 36px;
+}
+
+.count {
+  font-size: 16px;
+  color: #555;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="file"] {
+  cursor: pointer;
+}
+
+.buku-baru {
+  padding: 15px;
+  background-color: #0A868C;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.bg-login {
+  background-color: #C5D0C6;
+}
+
+.logo-login {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.form-login {
+  margin: 20px auto;
+  background-color: white;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px 30px 40px 30px;
+  border-radius: 20px;
+}
+
+.in-group {
+  margin: 30px auto 40px auto;
+}
+
+.in-group-col {
+  margin-left: 30px;
+  text-align: left;
+}
+
+.btn-login {
+  width: 150px;
+  border-radius: 15px;
+  color: white;
+  background-color: #0A868C;
+}
+
+.btn-back {
+  width: 150px;
+  border-radius: 15px;
+  color: white;
+  background-color: #8C0A0A;
+}
+
+.link-regis {
+  color: #0A868C;
+  text-decoration: none;
+}
+
+.black {
+  color: black;
+}
+
+.photo {
+  background-color: white;
+  max-width: 450px;
+  max-height: 750px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gambar {
+  height: 424px;
+  left: 12.15%;
+  right: 64.1%;
+  top: calc(50% - 424px/2 - 189.5px);
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-cfile {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #000000;
+}
+
+.info-akun {
+  width: 650px;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-info-save {
+  padding: 6px 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: #0A868C;
+}
+
+.btn-logout {
+  padding: 10px 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: #FF0000;
+}
+
+.card-book {
+  box-shadow: 0px 4px 23.8px 5px rgba(0, 0, 0, 0.75);
+  /* width: 25rem; */
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-book-img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  /* max-width: 200px; */
+  height: 325px;
+  max-height: 325px;
+}
+
+.detail-img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.card-body-btn {
+  background-color: #FF0000;
+  color: white;
+  border-radius: 78px;
+  padding: 10px 30px;
+}
+
+.btnred {
+  background-color: #FF0000;
+  color: white;
+}
+
+.btngreen {
+  background-color: #028106;
+  color: white;
+}
+
+.other-book {
+  margin: 100px auto 50px auto;
+  color: black;
+  text-decoration: none;
+}
+
+.card-admin-btn {
+  width: 100px;
+  color: white;
+  border-radius: 78px;
+}
+
+.m-top-100 {
+  margin-top: 100px;
+}
+
+.btn-checkout {
+  padding: 10px 50px;
+  border-radius: 78px;
+  color: white;
+  background-color: #8C0A0A;
+}
+
+/* TOMBOL PILIH FILE CUSTOM */
+.custom-file-input {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.custom-file-input input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  background-color: #000000;
+}
+
+.custom-file-input label {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-file-input:hover label {
+  background-color: #c3c3c3;
+  color: #000000;
+}
+/* END TOMBOL PILIH FILE CUSTOM */
+
+.harga {
+  color: #004AD8;
+}
